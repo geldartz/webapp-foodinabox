@@ -8,81 +8,136 @@
           </p>
         </router-link>
       </li>
-
-      <li class="nav-item">
-        <router-link to="/products" class="nav-link">
-          <i class="nav-icon fas fa-list orange"></i>
-          <p>
-            Product
-          </p>
-        </router-link>
-      </li>
-
       @can('isAdmin')
         <li class="nav-item">
           <router-link to="/users" class="nav-link">
-            <i class="fa fa-users nav-icon blue"></i>
-            <p>Users</p>
+            <i class="fa fa-user nav-icon custom-color-2 "></i>
+            <p>Accounts</p>
           </router-link>
         </li>
       @endcan
 
-      
-
       @can('isAdmin')
       <li class="nav-item has-treeview">
         <a href="#" class="nav-link">
-          <i class="nav-icon fas fa-cog green"></i>
+          <i class="nav-icon fa fa-cubes green"></i>
           <p>
-            Settings
+            Products
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/products" class="nav-link">
+              <i class="nav-icon fas fa-list-ol green"></i>
+              <p>
+                  All Products
+              </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/product-package" class="nav-link">
+              <i class="nav-icon fas fa-list-ol green"></i>
+              <p>
+                Package
+              </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/product-maintenance" class="nav-link">
+              <i class="nav-icon fas fa-list-ol green"></i>
+              <p>
+                  Maintenance
+              </p>
+            </router-link>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item has-treeview">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fa fa-credit-card yellow"></i>
+          <p>
+            Payments
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/online-payments" class="nav-link">
+              <i class="nav-icon fas fa-list-ol yellow"></i>
+              <p>
+                 Online Payments
+              </p>
+            </router-link>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item has-treeview">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fa fa-cubes custom-color-1"></i>
+          <p>
+            Orders
+            <i class="right fas fa-angle-left"></i>
+          </p>
+        </a>
+        <ul class="nav nav-treeview">
+          <li class="nav-item">
+            <router-link to="/website-orders" class="nav-link">
+              <i class="nav-icon fas fa-list-ol custom-color-1"></i>
+              <p>
+                 Website Orders
+              </p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/in-store-orders" class="nav-link">
+              <i class="nav-icon fas fa-list-ol custom-color-1"></i>
+              <p>
+                 In Store Orders
+              </p>
+            </router-link>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item has-treeview">
+        <a href="#" class="nav-link">
+          <i class="nav-icon fa fa-book orange"></i>
+          <p>
+            Report
             <i class="right fas fa-angle-left"></i>
           </p>
         </a>
         <ul class="nav nav-treeview">
 
           <li class="nav-item">
-            <router-link to="/product/category" class="nav-link">
-              <i class="nav-icon fas fa-list-ol green"></i>
+            <router-link to="/sales-report" class="nav-link">
+              <i class="nav-icon fa fa-bookmark orange"></i>
               <p>
-                Category
+                Sales Report
               </p>
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/product/tag" class="nav-link">
-              <i class="nav-icon fas fa-tags green"></i>
+            <router-link to="/delivery-sales-report" class="nav-link">
+              <i class="nav-icon fa fa-bookmark orange"></i>
               <p>
-                Tags
+                Delivery Sales Report
               </p>
             </router-link>
           </li>
-          
-            <li class="nav-item">
-              <router-link to="/developer" class="nav-link">
-                  <i class="nav-icon fas fa-cogs white"></i>
-                  <p>
-                      Developer
-                  </p>
-              </router-link>
-            </li>
         </ul>
       </li>
+      <li class="nav-item">
+        <router-link to="/settings" class="nav-link">
+          <i class="nav-icon fa fa-cogs red"></i>
+          <p>
+              Maintenance
+          </p>
+        </router-link>
+      </li>
+     
 
       @endcan
       
-      
-
-      <li class="nav-item">
-        <a href="#" class="nav-link" onclick="event.preventDefault();
-          document.getElementById('logout-form').submit();">
-          <i class="nav-icon fas fa-power-off red"></i>
-          <p>
-            {{ __('Logout') }}
-          </p>
-        </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-          @csrf
-        </form>
-      </li>
     </ul>
   </nav>

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes(['verify' => true]);
@@ -25,6 +25,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('home', function () {
     return redirect('/dashboard');
 });
+
+Route::put('/updatefee/{id}', [HomeController::class, 'updatefee'])
+                ->middleware('api');
 
 Route::get('/{vue_capture?}', function () {
     return view('home');

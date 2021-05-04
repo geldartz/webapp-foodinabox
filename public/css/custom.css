@@ -1,0 +1,278 @@
+.modal-header{
+    padding: 10px 8px;
+    background-color: #f9503b;
+    color: #fff;
+}
+.card-info.card-outline {
+    border-top: 3px solid #f9503b;
+}
+.modal-title{
+    font-size: 15px;
+}
+.modal-header .close{
+    color: #fff;
+}
+.modal .btn-primary{
+    background-color: #f9503b;
+    color: #fff;
+    padding: 2px 20px;
+    border-color: #990303;
+}
+.modal .btn-default{
+    padding: 2px 20px;
+}
+.action{
+    width: 90px !important;
+    text-align: center;
+}
+.amount-action{
+    width: 120px !important;
+    text-align: center;
+}
+.plus-action{
+    width: 50px !important;
+    text-align: center;
+}
+.ccolor{
+    color: #f9503b;
+}
+.table th, .table td{
+    padding: 5px 10px;
+}
+.pointer{
+    cursor: pointer;
+}
+.w-1-4{
+width: 240px !important;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.vs__dropdown-toggle{
+    padding: 4px 0 4px 0 !important;
+}
+.text-bold{
+    font-weight: 600;
+}
+.nodata{
+    font-family: monospace;
+    background-color: #f9503b;
+    color: #fff;
+}
+.black{
+    color: #000;
+}
+.main-sidebar{
+    background-color: #1b2e35;
+}
+.nav-item a p{
+    color: #fff !important;
+}
+.brand-link .brand-image{
+    padding: 2px;
+    background-color: #fff;
+}
+.brand-link span{
+    font-size: .8em;
+}
+.user-panel .info{
+    color: #fff ;
+    text-align: center;
+    width: 100%;
+}
+.user-panel .info span{
+    color: #aaa !important;
+    text-align: center;
+}
+.ascob{
+    background-image: url('../images/login-bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 654px;
+}
+.hello-text{
+    font-size: 24px;
+    margin-bottom: 0;
+    color: #d5730e !important;
+}
+/* .login-form{
+    background-color: #faeee2;
+} */
+.ascob-text{
+    font-size: 58px;
+    margin-bottom: 0;
+    font-weight: 900;
+    font-family: "Verdana";
+    color: #d5730e !important;
+}
+.app-text{
+    font-size: 28px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #d5730e !important;
+}
+.w-full{
+    width: 100%;
+}
+.btn-plus{
+    background-color: #f9503b;
+    color: #fff;
+    padding: 4px 10px !important;
+}
+.btn-minus{
+    background-color: #ff6054;
+    color: #fff;
+    padding: 4px 10px !important;
+}
+.form-holder{
+    padding: 30px 0;
+    background-color: #faeee2;
+    border-radius: 20px;
+}
+.text-holder{
+    padding-top: 20%;
+}
+.fee-form{
+padding: 10px;
+border: 1px solid #ddd;
+padding-bottom: 40px;
+}
+.btn-custom{
+    background-color: #f9503b;
+    color: #fff;
+    padding: 2px 20px;
+    float: inline-end;
+}
+.login-text{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: "Verdana";
+}
+.login-logo{
+    height: 100px;
+width: auto;
+display: block;
+margin: auto;
+}
+.text-gray{
+    color: #333333;
+}
+.custom-color-1{
+    color: #d5730e;
+}
+.custom-color-2{
+    color: #faeee2;
+}
+.btn-login{
+    background-image: linear-gradient(to right, #d5730e , #f59e45);
+    border:1px solid #cf7213;
+}
+.btn-login:hover{
+    border:1px solid #fff;
+}
+.w-15p{
+    width: 15% !important;
+}
+.text-muted{
+    font-size: 12px !important;
+}
+
+.lds-ellipsis {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #f9503b;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    /* .form-holder{
+        padding: 10px;
+    } */
+    .ascob-text{
+        font-size: 40px;
+    }
+    /* .pad-0{
+        padding: 0 !important;
+        margin: 5px !important;
+    } */
+    .app-text{
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .form-holder{
+        padding: 30px;
+    }
+    .ascob-text{
+        font-size: 40px;
+    }
+    .text-holder{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .hello-text{
+        display: none;
+    }
+    .app-text{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+  }

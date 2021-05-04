@@ -7,10 +7,11 @@
 
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{ config('app.name', 'Laravel') }}</title>
+  <title>{{ config('app.name', 'Food In A Box') }}</title>
   
 
   <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+  <link rel="stylesheet" href="{{ asset('/css/custom.css') }}">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper" id="app">
@@ -35,6 +36,29 @@
         </div>
       </div>
     </form>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="fa fa-th-large"></i></a>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-user-lock mr-2"></i> Change Password
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{ route('logout') }}"
+             onclick="event.preventDefault();
+             document.getElementById('logout-form').submit();">
+             <i class="fas fa-power-off mr-2"></i>                                    
+            {{ __('Logout') }}
+           </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+        </div>
+      </li>
+    </ul>
 
   </nav>
   <!-- /.navbar -->
@@ -43,8 +67,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <router-link to="/dashboard" class="brand-link">
-      <img src="{{ asset('/images/logo.png') }}" alt="The Logo" class="brand-image img-circle elevation-3"
-           style="opacity: .8">
+      <img src="{{ asset('/images/logo.png') }}" alt="The Logo" class="brand-image elevation-3">
       <span class="brand-text font-weight-light">{{ config('app.name', 'Laravel') }}</span>
     </router-link>
 
@@ -97,7 +120,6 @@
 
     <!-- Main content -->
     <router-view></router-view>
-
     <vue-progress-bar></vue-progress-bar>
 
     {{-- /.content --}}
@@ -108,10 +130,10 @@
   <footer class="main-footer">
     {{-- To the right --}}
     <div class="float-right d-none d-sm-block">
-      <b>Version</b> 3.0.0
+      <b>Version</b> 1.0.1
     </div>
     {{-- Default to the left --}}
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    Developed with a <i class="fa fa-heart red"></i> <strong> Maria Cecilla Abesino Amigo</strong>
   </footer>
 </div>
 {{-- ./wrapper --}}
