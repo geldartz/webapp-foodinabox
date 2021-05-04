@@ -8,12 +8,6 @@
 ## About Repository
 
 A very simple Laravel 8 + Vue 2 + AdminLTE 3 based Curd Starter template for SPA Application.
-<p align="center">
-<img src="https://i.imgur.com/mZAHbUL.png">
-<img src="https://i.imgur.com/3hhoQnq.png">
-<img src="https://i.imgur.com/aHtQkYl.png">
-<img src="https://i.imgur.com/V7OuwLn.png">
-</p>
 
 ## Tech Specification
 
@@ -26,20 +20,15 @@ A very simple Laravel 8 + Vue 2 + AdminLTE 3 based Curd Starter template for SPA
 ## Features
 
 - Modal based Create+Edit, List with Pagination, Delete with Sweetalert
-- Login, Register, Forget+Reset Password as default auth
-- Profile, Update Profile, Change Password, Avatar
-- Product Management 
 - User Management
-- Settings: Categories, Tags
 - Frontend and Backend User ACL with Gate Policy (type: admin/user)
-- Simple Static Dashboard
 - Developer Options for OAuth Clients and Personal Access Token
 - Build with Docker
 
 ## Installation
 
-- `git clone https://github.com/AnowarCST/laravel-vue-crud-starter.git`
-- `cd laravel-vue-crud-starter/`
+- `git clone https://github.com/geldartz/webapp-foodinabox.git`
+- `cd webapp-foodinabox/`
 - `composer install`
 - `cp .env.example .env`
 - Update `.env` and set your database credentials
@@ -89,6 +78,5 @@ A `reports` directory has been created for code coverage report. Open the dashbo
 ## Credit
 This repository is motivated by [Hujjat/laravStart](https://github.com/Hujjat/laravStart) and his awesome video tutorial in [Youtube](https://www.youtube.com/playlist?list=PLB4AdipoHpxaHDLIaMdtro1eXnQtl_UvE).
 
-## License
+This repository is motivated by AnowarCst(https://github.com/AnowarCST/laravel-vue-crud-starter) for starter template.
 
-[MIT license](https://opensource.org/licenses/MIT).
